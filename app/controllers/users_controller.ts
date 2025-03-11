@@ -13,7 +13,7 @@ export default class UsersController {
     const { userName, email } = request.all()
     try {
       await User.create({ username: userName, email: email })
-      return response.redirect().toRoute('users.showAllUsers')
+      return response.redirect().toRoute('showAllUsers')
     } catch (error) {
       return response.badRequest({ error: error.message })
     }
@@ -23,7 +23,7 @@ export default class UsersController {
     try {
       const user = await User.findOrFail(id)
       await user.delete()
-      return response.redirect().toRoute('users.showAllUsers')
+      return response.redirect().toRoute('showAllUsers')
     } catch (error) {
       return response.badRequest({ error: error.message })
     }
