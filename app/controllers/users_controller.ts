@@ -18,4 +18,14 @@ export default class UsersController {
       return response.badRequest({ error: error.message })
     }
   }
+  public async deleteUser({ params, response }: HttpContext) {
+    const { id } = params
+    try {
+      const user = await User.findOrFail(id)
+      await user.delete()
+      return response.redirect().toRoute('users.showAllUsers')
+    } catch (error) {
+      return response.badRequest({ error: error.message })
+    }
+  }
 }
