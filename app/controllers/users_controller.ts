@@ -9,4 +9,13 @@ export default class UsersController {
   public async createUser({ view }: HttpContext) {
     return view.render('pages/create_user')
   }
+  public async storeUser({ request, response }: HttpContext) {
+    const { userName, email } = request.all()
+    try {
+      await User.create({ username: userName, email: email })
+      return response.redirect().toRoute('users.showAllUsers')
+    } catch (error) {
+      return response.badRequest({ error: error.message })
+    }
+  }
 }
