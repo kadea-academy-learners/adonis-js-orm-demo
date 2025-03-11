@@ -25,4 +25,10 @@ export default class FrontOfficesController {
       pageDescription: 'Blogoss the best trip blog in kinshasa',
     })
   }
+  public async contactPage({ view }: HttpContext) {
+    return view.render('pages/contact', {
+      pageTitle: 'Contact Blogoss kinshasa',
+      pageDescription: 'Blogoss the best trip blog in kinshasa',
+    })
+  }
 }
