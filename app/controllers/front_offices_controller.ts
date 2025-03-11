@@ -7,4 +7,10 @@ export default class FrontOfficesController {
       pageDescription: 'Blogoss the best trip blog in kinshasa',
     })
   }
+  public async aboutPage({ view }: HttpContext) {
+    return view.render('pages/about', {
+      pageTitle: 'About Blogoss kinshasa',
+      pageDescription: 'Blogoss the best trip blog in kinshasa',
+    })
+  }
 }
