@@ -4,10 +4,17 @@ import User from '#models/user'
 export default class UsersController {
   public async showAllUsers({ view }: HttpContext) {
     const users = await User.all()
-    return view.render('pages/show_all_user', { users })
+    return view.render('pages/show_all_user', {
+      pageTitle: 'Show All Users',
+      pageDescription: 'Blogoss the best trip blog in kinshasa',
+      users: users,
+    })
   }
   public async createUser({ view }: HttpContext) {
-    return view.render('pages/create_user')
+    return view.render('pages/create_user', {
+      pageTitle: 'Sign Up',
+      pageDescription: 'Blogoss the best trip blog in kinshasa',
+    })
   }
   public async storeUser({ request, response }: HttpContext) {
     const { userName, email } = request.all()
