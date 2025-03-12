@@ -115,7 +115,7 @@ Pour installer ce projet d'exercice de démo, suivez les étapes suivantes. :
   
 ### Création de la base de données
 
-Pour créer la base de données, vous devez lancer la commande :
+Pour créer la base de données, vous devez taper la commande :
 
 ```
 
@@ -130,5 +130,13 @@ Pour lancer votre projet en mode développement tapez la commande :
 ```
 
 npm run dev
+
+```
+
+Ensuite rendez-vous dans votre navigateur et tapez ce qui suis dans votre barre d'adresse URL :
+
+```
+
+http://localhost:3333
 
 ```
