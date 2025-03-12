@@ -48,10 +48,6 @@ Avant de commencer cet exercice de démo, assurez-vous que vous avez les éléme
 
 - Des bonnes bases en **Base de données**
 
-## Note
-
-> Ce Projet **Adonis Js** a été initialisé pour être lié avec une base de données ***SqlLite*** et ne nécessite pas l'installation d'un **SGBD** pour pouvoir fonctionner correctement.
-  
 
 ## Installation
 
@@ -108,6 +104,24 @@ Pour installer ce projet d'exercice de démo, suivez les étapes suivantes. :
     ```
     node ace generate:key
     ``` 
+
+## Base de données
+
+### Note
+
+> Ce Projet **Adonis Js** a été initialisé pour être lié avec une base de données ***SqlLite*** et ne nécessite pas l'installation d'un **SGBD** pour pouvoir fonctionner correctement.
+
+> Vous devez créer un dossier ***tmp*** a la racine de votre projet. C'est dans ce dossier que vas être stockée la base de données **SqlLite**, qui seras généré automatiquement avec les commandes de migrations.
+  
+### Création de la base de données
+
+Pour créer la base de données, vous devez lancer la commande :
+
+```
+
+node ace migration:run
+
+```
 
 ## Lancez votre projet
 
