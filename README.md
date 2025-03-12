@@ -140,3 +140,19 @@ Ensuite rendez-vous dans votre navigateur et tapez ce qui suis dans votre barre 
 http://localhost:3333
 
 ```
+
+## Urls du projet
+
+Liste des Urls du projet :
+
+```
+
+Home page : http://localhost:3333/
+About page : http://localhost:3333/about
+Services page : http://localhost:3333/services
+Blog page : http://localhost:3333/blog
+Contact page : http://localhost:3333/contact
+Show all user page : http://localhost:3333/user/show-all
+Create user page : http://localhost:3333/user/create
+
+```
